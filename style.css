@@ -27,6 +27,7 @@ body {
     grid-template-rows: 1fr 5fr;
     align-items: center;
     justify-items: center;
+    margin: 2rem;
 }
 
 .grid {
@@ -67,11 +68,31 @@ h1{
 .card {
     width: 450px;
     height: 300px;
-    margin: 10px;
-    border: 3px solid black;
-    border-radius: 1rem;
+    margin: 20px;
+    border: 1px solid var(--clr-neutral-lightgray);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 5px 15px 5px var(--clr-neutral-lightgray);
+}
+
+.supervisor {
+    border-top: 5px solid var(--clr-primary-cyan);
 }
 
 .teambuilder {
     border-top: 5px solid var(--clr-primary-red);
+}
+
+.karma {
+    border-top: 5px solid var(--clr-primary-orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--clr-primary-blue);
+}
+
+.icon {
+    position: relative;
+    bottom: -100px;
+    left: 300px;
 }
