@@ -1,3 +1,60 @@
 :root {
+    --clr-primary-red:hsl(0, 78%, 62%);
+    --clr-primary-cyan:hsl(180, 62%, 55%);
+    --clr-primary-orange:hsl(34, 97%, 64%);
+    --clr-primary-blue: hsl(212, 86%, 64%);
+    --clr-neutral-darkblue:hsl(234, 12%, 34%);
+    --clr-neutral-grayblue: hsl(229, 6%, 66%);
+    --clr-neutral-lightgray: hsl(0, 0%, 98%);
+
     --font-family-all: font-family: "Poppins", sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family-all);
+}
+
+.main-grid{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.center-column {
+    display: grid;
+}
+
+@media (max-width: 600px) {
+    .grid{
+        grid-template-columns: auto;
+    }
+}
+
+
+
+/* cards style */
+.card {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+.teambuilder {
+    border-top: 5px solid var(--clr-primary-red);
 }
