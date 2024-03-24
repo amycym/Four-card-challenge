@@ -7,7 +7,7 @@
     --clr-neutral-grayblue: hsl(229, 6%, 66%);
     --clr-neutral-lightgray: hsl(0, 0%, 98%);
 
-    --font-family-all: font-family: "Poppins", sans-serif;
+    --font-family-all: "Poppins", sans-serif;
 }
 
 *, *::before, *::after {
@@ -44,7 +44,24 @@ body {
     }
 }
 
+.header{
+    text-align: center;
+    width: 500px;
+}
 
+p{
+    color: var(--clr-neutral-grayblue);
+}
+
+.moto {
+    font-size: 2.2rem;
+    font-weight: 200;
+    color: var(--clr-neutral-darkblue);
+}
+
+h1{
+    color: var(--clr-neutral-darkblue);
+}
 
 /* cards style */
 .card {
