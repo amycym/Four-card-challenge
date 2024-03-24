@@ -33,7 +33,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: auto;
 }
 
 .sub-grid{
@@ -45,16 +45,16 @@ body {
     display: grid;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     .grid{
-        grid-template-columns: auto;
+        grid-template-columns: repeat(3, 2fr);
     }
 }
 
 .header{
     text-align: center;
     width: 500px;
-    /* padding: 30px 3px 10px 3px; */
+    padding: 30px 3px 10px 3px;
 }
 
 p{
