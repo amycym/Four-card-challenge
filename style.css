@@ -25,15 +25,19 @@ body {
 
 .main-grid{
     display: grid;
-    grid-template-rows: 1fr 4fr;
-    align-items: center;
+    grid-template-rows: subgrid;
     justify-items: center;
-    margin: 1.5rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: auto;
+}
+
+@media (min-width: 700px) {
+    .grid{
+        grid-template-columns: repeat(3, 3fr);
+    }
 }
 
 .sub-grid{
@@ -45,16 +49,12 @@ body {
     display: grid;
 }
 
-@media (min-width: 600px) {
-    .grid{
-        grid-template-columns: repeat(3, 2fr);
-    }
-}
-
 .header{
     text-align: center;
-    width: 500px;
+    text-wrap: wrap;
+    max-width: 500px;
     padding: 30px 3px 10px 3px;
+    margin-bottom: 2rem;
 }
 
 p{
@@ -78,10 +78,9 @@ h1{
     width: 400px;
     height: 300px;
     margin: 20px;
-    border: 1px solid var(--clr-neutral-lightgray);
     border-radius: 0.5rem;
     padding: 2rem;
-    box-shadow: 5px 15px 5px var(--clr-neutral-lightgray);
+    box-shadow: 0 5px 15px var(--clr-neutral-grayblue);
 }
 
 .supervisor {
